@@ -57,3 +57,43 @@ favorite_number = input()
 print('You entered: ' + favorite_number)
 favorite_number_incremented = int(favorite_number) + 1							# python is smart enough to see we're trying to add a number and a string and will error if we don't "cast" one to the other
 print('This number is bigger: ' + str(favorite_number_incremented))					# and now we have to cast it back
+
+
+
+x = 0
+if x > 0:
+  print('Greater than 0.')
+
+if x == 0:
+  print('Equal to 0.')
+
+if x < 0:
+  print('Less than 0.')
+
+# we can combine these into one logical block
+
+if x > 0:
+  print('Greater than 0.')
+elif x == 0:
+  print('Equal to 0.')
+else:
+  print('Less than 0.')
+
+y = 1
+if x == 0 and y == 2:
+  print('This will not work.')
+elif x == 0 and y == 1:
+  print('This will work.')
+
+if x == 0 or y == 2:
+  print('This will also work.')
+
+
+# Both of these loops print the numbers from 0
+
+for x in range(5):	# range() is a yielding function (one that keeps track of its responses and enumerates appropriately) that will return the values 0, 1, 2, 3, and 4 respectively.
+  print(x)
+
+x = 0
+while x <= 4:
+  print(x)
